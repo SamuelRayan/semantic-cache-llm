@@ -1,0 +1,8 @@
+{
+  "bootstrap_pct_of_train_groups": 10,
+  "judge_sample_rate": 0.2,
+  "knn_final_avg_quality": 0.7696168316831675,
+  "hgb_frozen_final_avg_quality": 0.6894899339933989,
+  "knn_final_avg_cost": 0.0002669221122112207,
+  "hgb_frozen_final_avg_cost": 0.000189826402640264
+}

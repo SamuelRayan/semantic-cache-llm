@@ -1,0 +1,18 @@
+{
+  "n_requests": 5063,
+  "cache_hit_rate": 0.9620778194746198,
+  "cache_miss_count": 192,
+  "escalation_count": 23,
+  "escalation_rate_of_all_requests": 0.0045427612087695045,
+  "escalation_rate_of_misses": 0.11979166666666667,
+  "routed_model_distribution": {
+    "mock-large": 0.4189215879913095,
+    "mock-medium": 0.5796958325103694,
+    "mock-small": 0.0013825794983211535
+  },
+  "avg_quality": 0.7215728026861562,
+  "total_cost_usd": 0.0401,
+  "always_large_no_cache_cost_usd": 2.0868,
+  "cost_savings_vs_always_large_no_cache_pct": 98.08,
+  "wall_clock_seconds": 75.5
+}

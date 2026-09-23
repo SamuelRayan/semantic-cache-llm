@@ -11,3 +11,22 @@ REQUEST_LATENCY = Histogram(
     ["cache_status"],
     registry=registry,
 )
+
+# ── Routing metrics ──────────────────────────────────────────────────────────
+ROUTED_REQUESTS = Counter(
+    "routed_requests_total", "Requests served by each model/reason combination",
+    ["model", "reason"], registry=registry,
+)
+ESCALATIONS = Counter(
+    "escalations_total", "Cascade escalations from one tier to the next",
+    ["from_model", "to_model"], registry=registry,
+)
+ROUTING_LATENCY = Histogram(
+    "routing_latency_seconds", "Time spent making a routing decision (CPU only, no LLM call)",
+    registry=registry,
+)
+COST_SAVED_VS_LARGE = Counter(
+    "estimated_cost_saved_vs_large_usd_total",
+    "Estimated USD saved by routing away from the large model",
+    registry=registry,
+)

@@ -14,5 +14,6 @@ class Settings:
     faiss_ids_path: str=os.path.join(data_dir, "cache_ids.json")
     use_mock_llm: bool=os.getenv("USE-MOCK-LLM", "true").lower() == "true"
     openai_api_key : str=os.getenv("OPENAI_API_KEY", "")
+    sync_scoring: bool=os.getenv("SYNC_SCORING", "false").lower() == "true"
 
 settings=Settings()

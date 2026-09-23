@@ -1,0 +1,24 @@
+# Mock model registry for the non-LLM router. Relative costs are roughly
+# 1 : 5 : 25 (small : medium : large), matching a realistic tiered pricing
+# spread without needing real provider pricing tables.
+models:
+  - name: mock-small
+    tier: small
+    cost_per_1k_input: 0.0002
+    cost_per_1k_output: 0.0006
+    avg_latency_ms: 300
+    enabled: true
+
+  - name: mock-medium
+    tier: medium
+    cost_per_1k_input: 0.0010
+    cost_per_1k_output: 0.0030
+    avg_latency_ms: 600
+    enabled: true
+
+  - name: mock-large
+    tier: large
+    cost_per_1k_input: 0.0050
+    cost_per_1k_output: 0.0150
+    avg_latency_ms: 1200
+    enabled: true

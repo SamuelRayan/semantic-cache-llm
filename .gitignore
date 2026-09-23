@@ -1,7 +1,13 @@
 venv/
 __pycache__/
 *.pyc
-data/
+/data/
 .env
 .vscode/
 .idea/
+
+# Regenerable/large real-world dataset (378MB, exceeds GitHub's 100MB limit) —
+# reproduce via load_routerbench.py, cached under data/routing_real/ locally.
+sim/data/routerbench_routing_dataset.jsonl
+.pytest_cache/
+.cache/
